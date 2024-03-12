@@ -3,11 +3,11 @@
 
 dependencies that need to install
 
-**express** for backend,
-**nodemon** for development runtime,
-**dotenv** for accessing ENV file for more secure backen,
-**mongoose** enable to connect to MongoDB,
-**Cors** for API security,
+**express** for backend,  
+**nodemon** for development runtime,  
+**dotenv** for accessing ENV file for more secure backen,   
+**mongoose** enable to connect to MongoDB,  
+**Cors** for API security,   
 
 
 On this repo I learned the following thing  
