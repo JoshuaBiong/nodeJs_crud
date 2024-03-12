@@ -20,7 +20,6 @@ app.get('/', (req, res) => {
     res.status(200).json("Hello NodeJs")
 })
 
-
 app.use(middleware)
 
 
