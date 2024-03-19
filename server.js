@@ -6,10 +6,8 @@ const productRoute = require('./routes/productRoutes')
 const middleware = require('./middleware/errorMiddleware')
 
 
-
 const PORT = process.env.PORT
 const MONGO_URL = process.env.MONGO_URL
-
 
 // to display the data as JSON
 
@@ -21,7 +19,6 @@ app.get('/', (req, res) => {
 })
 
 app.use(middleware)
-
 
 
 

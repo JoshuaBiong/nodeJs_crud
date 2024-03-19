@@ -3,7 +3,7 @@ const asynhandler = require('express-async-handler')
 
 
 
-
+// GET Products function
 const getProducts = asynhandler(async(req, res) => {
 
     try {
@@ -15,6 +15,7 @@ const getProducts = asynhandler(async(req, res) => {
     }
 })
 
+// GET a Product function
 const getProduct = asynhandler(async(req, res) => {
 
     try {
@@ -32,6 +33,7 @@ const getProduct = asynhandler(async(req, res) => {
     }
 })
 
+// DELETE a Product function
 const deleteProduct = asynhandler(async(req, res) => {
     try {
         const { id } = req.params
@@ -47,6 +49,8 @@ const deleteProduct = asynhandler(async(req, res) => {
     }
 })
 
+
+// PUT/Update the Product function
 const updateProduct = asynhandler(async(req, res) => {
     try {
         const { id } = req.params
@@ -63,6 +67,7 @@ const updateProduct = asynhandler(async(req, res) => {
     }
 })
 
+// POST/ Create a Product function
 const createProduct = asynhandler(async(req, res) => {
     try {
         const product = await Product.create(req.body)
